@@ -68,9 +68,9 @@ void GPS_Location() {
 }
 
 void HTTP() {
-  mySerial.println("AT+HTTPINIT");
+  mySerial.println("AT+HTTPINIT");                //To start http service
   delay(1000);
-  mySerial.println("AT+HTTPPARA=\"URL\",\"Enter your url\"\r\n");
+  mySerial.println("AT+HTTPPARA=\"URL\",\"Enter your url\"\r\n");    //To set the parameter of API
   delay(1000);
   mySerial.println("AT+HTTPACTION=0\r\n");        //'0' To get data & '1' To post data
   delay(1000);
