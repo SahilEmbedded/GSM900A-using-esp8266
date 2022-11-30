@@ -61,9 +61,9 @@ void DialCall() {
 }
 
 void GPS_Location() {
-    mySerial.println("AT+CGNSSPWR=1");
-    delay(1000);
-    mySerial.println("AT+CGNSSTST=1");
+    mySerial.println("AT+CGNSSPWR=1");       //To start gnss
+    delay(1000); 
+    mySerial.println("AT+CGNSSTST=1");       //To get the GPGGA string
     delay(1000);
 }
 
